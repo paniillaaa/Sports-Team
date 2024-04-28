@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Formulir Pendaftaran Anggota Klub Olahraga - Klub Olahraga FIRST</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0c283a;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #822929;
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #2c3e50;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: #822929;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #822929;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="clubteam.jpeg" alt="FIRST Sports Club">
+    <h1>FIRST SPORTS CLUB</h1> <br>
+    <h3>PENDAFTARAN ANGGOTA KLUB</h3>
+    <form action="#" method="post">
+        <label for="nama_lengkap">Nama Lengkap <span style="color:red;">*</span></label>
+        <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+        
+        <label for="email">Alamat Email <span style="color:red;">*</span></label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telepon">Nomor Telepon <span style="color:red;">*</span></label>
+        <input type="tel" id="telepon" name="telepon" required>
+        
+        <label for="tanggal_lahir">Tanggal Lahir <span style="color:red;">*</span></label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+        
+        <label for="alamat">Alamat Rumah <span style="color:red;">*</span></label>
+        <input type="text" id="alamat" name="alamat" required>
+        
+        <label for="kota">Kota <span style="color:red;">*</span></label>
+        <input type="text" id="kota" name="kota" required>
+        
+        <label for="kode_pos">Kode Pos <span style="color:red;">*</span></label>
+        <input type="text" id="kode_pos" name="kode_pos" required>
+        
+        <label for="jenis_kelamin">Jenis Kelamin <span style="color:red;">*</span></label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="" disabled selected>-- Pilih Gender --</option>
+            <option value="Laki-Laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label for="cabang_olahraga">Cabang Olahraga Pilihan <span style="color:red;">*</span></label>
+        <select id="cabang_olahraga" name="cabang_olahraga" required>
+            <option value="" disabled selected>-- Pilih Cabang Olahraga --</option>
+            <option value="Sepak Bola">Sepak Bola</option>
+            <option value="Bola Basket">Bola Basket</option>
+            <option value="Bola Voli">Bola Voli</option>
+            <option value="Bulu Tangkis">Bulu Tangkis</option>
+            <option value="Renang">Renang</option>
+        </select>
+        
+        <label for="ketersediaan">Ketersediaan <span style="color:red;">*</span></label>
+        <select id="ketersediaan" name="ketersediaan" required>
+            <option value="" disabled selected>-- Pilih Hari dan Waktu --</option>
+            <option value="Senin 15.00">Senin 15.00</option>
+            <option value="Selasa 15.00">Selasa 15.00</option>
+            <option value="Rabu 16.00">Rabu 16.00</option>
+            <option value="Kamis 17.00">Kamis 17.00</option>
+            <option value="Jumat 15.00">Jumat 15.00</option>
+        </select>
+
+        <label for="riwayat_olahraga">Riwayat Olahraga Sebelumnya</label>
+        <textarea id="riwayat_olahraga" name="riwayat_olahraga"></textarea>
+        
+        <label for="media_sosial">Profil Media Sosial</label>
+        <input type="text" id="facebook" placeholder="Facebook">
+        <input type="text" id="twitter" placeholder="Twitter">
+        <input type="text" id="instagram" placeholder="Instagram">
+        
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</div>
+</body>
+</html>
